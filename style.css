@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Righteous&display=swap');
+
+.BG {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -10;
+}
+
+.dateHolder {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+}
+
+.todate {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(rgb(43, 0, 255), rgb(0, 94, 255), transparent);
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+
+.date {
+    position: relative;
+    height: 50px;
+    float: left;
+    font-size: 60px;
+    margin-left: 10px;
+}
+
+.daymonthyear {
+    position: relative;
+    height: 80px;
+    margin-left: 10px;
+    font-size: 20px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.week {
+    position: absolute;
+    margin: auto;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    right: 0;
+    left: 0;
+    bottom: 30%;
+}
+
+.circle {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 1px;
+    margin-left: 44%;
+    justify-content: center;
+}
+
+.todolist {
+    position: absolute;
+    height: 70%;
+    width: 90%;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: scroll;
+    border-radius: 10px 10px 0 0;
+}
+
+.li1 {
+    position: relative;
+    height: 120px;
+    width: 93%;
+    padding: 10px;
+    background: linear-gradient(to right, rgb(0, 4, 254), rgb(0, 132, 255), rgb(149, 174, 255));
+    border-radius: 10px;
+}
+
+.title , .time , .desc {
+    position: relative;
+    height: 36px;
+    width: 90%;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 25px;
+    overflow-y: scroll;
+}
+
+.time , .desc {
+    font-size: 20px;
+}
+
+.desc {
+    overflow: scroll;
+    height: 30px;
+}
+
+.del {
+    position: absolute;
+    height: 20px;
+    filter: invert(1);
+    top: 15px;
+    right: 15px;
+}
+
+.add {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    margin: auto;
+    bottom: 15px;
+    right: 15px;
+    background: #0ed6bb;
+    border-radius: 50px;
+    box-shadow: 0 0 20px #1bffe1;
+}
+
+.form {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(rgb(0, 34, 255), rgb(0, 174, 255), rgb(192, 255, 253));
+    z-index: 6;
+    transition: 1s;
+    transition-timing-function: ease;
+}
+
+.titleInp , .timeInp , .meridianInp , .descInp {
+    position: absolute;
+    height: 30px;
+    font-family: 'Quicksand', sans-serif;
+    width: 70%;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 35%;
+    border: 0;
+    text-align: center;
+    border-radius: 50px;
+    outline: none;
+    font-weight: bolder;
+}
+
+.timeInp {
+    top: 45%;
+}
+
+.meridianInp {
+    height: 35px;
+    width: 20%;
+    left: 51%;
+    top: 44.7%;
+}
+
+.descInp {
+    top: 55%;
+}
+
+.submitBtn {
+    position: absolute;
+    height: 30px;
+    width: 70%;
+    outline: none;
+    border: 1px solid white;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 50px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 65%;
+    background: rgb(9, 255, 0);
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.AddItem {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    margin: auto;
+    right: 0;
+    left: 0;
+    text-align: center;
+    top: 15%;
+    color: white;
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.preloader {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgb(234, 255, 0), rgb(255, 200, 0), rgb(255, 89, 0));
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease;
+}
+
+.logo {
+    position: absolute;
+    height: 140px;
+}
+
+.loader {
+    position: absolute;
+    height: 140px;
+    bottom: 20%;
+    filter: hue-rotate(120deg);
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+
+.plus {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(4, 12, 175, 0.724);
+    border-radius: 50%;
+    font-weight: bolder;
+    bottom: 0;
+    right: 5%;
+    box-shadow: 0 0 40px rgb(255, 255, 255);
+}
+
+.exitForm {
+    position: absolute;
+    height: 30px;
+    filter: invert(1);
+    right: 10px;
+    top: 10px;
+
+}
